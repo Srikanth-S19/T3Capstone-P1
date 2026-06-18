@@ -77,17 +77,11 @@ You are given customer, order, support-ticket, web/app activity, campaign, and c
 2. Install additional python modules given in "requirements.txt"
 
 3. Create sub-folder structure as below :
-
+   
             ├───data
-            └───Images
+            └───images
 
-3. Copy the files listed in "Input Data Files" section to "data" folder
-
-
-
-### Program Execution
-
-    Run Program "eda_audit.ipynb""
+4. Copy the files listed in "Input Data Files" section to "data" folder
 
 ### Input Data Files (Under "data" folder)
 
@@ -101,10 +95,17 @@ You are given customer, order, support-ticket, web/app activity, campaign, and c
 | `rfm_modeling_snapshot.csv` | 2,400  | Pre-built, feature-engineered modeling table                  |
 | `intervention_history.csv`  | 2,400  | Most recent campaign/intervention per customer                |
 
+### Program Execution
+
+```
+Run Program "eda_audit.ipynb"
+```
+
+After running, the program will generate the files listed in sections "Output Data Files" and "Output Image Files" in the respective folders
+
+
+
 ### Output Data Files (Under "data" folder)
-
-
-
 
 | File Name                                  | Description                                                                             |
 | ------------------------------------------ | --------------------------------------------------------------------------------------- |
@@ -113,9 +114,6 @@ You are given customer, order, support-ticket, web/app activity, campaign, and c
 | monthly_revenue_percentage_by_category.csv | Monthly revenue percentage per category                                                 |
 
 ### Output Image Files (Under "images" folder)
-
-
-
 
 | File Name                                       | Description                                              |
 | ----------------------------------------------- | -------------------------------------------------------- |
@@ -134,3 +132,10 @@ You are given customer, order, support-ticket, web/app activity, campaign, and c
 | T3P1_customer_categorical_distributions.png     | Distribution of customers by categories                  |
 | T3P1_churn_labels_eda_dashboard.png             | Churn distribution                                       |
 | T3P1_category_quantity_and_orders_combo.png     | Average order quantity and volume by category            |
+
+### Documents
+
+| File Name              | Description                                                    |
+| ---------------------- | -------------------------------------------------------------- |
+| data_quality_report.md | Data quality issues found                                      |
+| business_memo.md       | A business-facing memo, referring to specific dataset patterns |
